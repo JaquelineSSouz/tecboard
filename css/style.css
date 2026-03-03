@@ -1,0 +1,150 @@
+
+/*Definição de fontes*/
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Bold.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf")
+    format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0; /*O * aplica estilos a todos elementos e reseta as margens e espaçamentos quando zeramos elas ->*/
+}
+
+/*Estilo Desktop*/
+body{
+    background-color: #0E1014;
+    color: #FFFFFF
+}
+
+header img{
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+h1{
+    font-size: 64px;
+    font-family: "Unbounded", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1 span{
+    color: #9747FF;   
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+}
+
+a{
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color:#9747FF;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto 0;
+}
+
+a:hover{
+    background-color: #8233E8;
+}
+
+section img{
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+@media(max-width: 768px){
+
+    header img{
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+}
+
+@media(max-width: 375px){
+    header img{
+        margin: 32px 0 0 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        width: 340px;
+    }
+    a{
+       font-size: 20px;
+       width: 251px;
+       
+    }
+    section img{
+        width: 340px;
+        height: 230px;
+    }
+}
+
+
+
+
+/*h1, p, a{
+    color: #FFFFFF;
+}*/
+
+/*.cor-branca {  
+    color: #FFFFFF;
+}*/
+
+/*h1 {
+    hexadecimal ff0000;
+    nomeada: red;
+    rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+*/
+
+/*quando for preciso estilizar uma tag por exemplo uma tag não semântica mais de uma vez, para que o css respeite a cor ou estilo definido para a próxima tag repetida, podemos especificar para que ele possa entender que a alteração em uma é diferente da outra. No código é usado a tag não semântica span e color #9747FF para definir apneas a parte de cima do h1 como roxo, se fosse preciso colocar mais um span no p (paragráfo) seria preciso especificar os dois span, o primeiro seria 
+h1 span{
+} 
+e o outro: 
+p span {
+} */
+
+/*quando colocamos alguma das fontes que já estão no sistemas, observamos que vem três tipos de fontes, e isso ocorre para evitar um erro, caso o usuário não tenha uma a primeira fonte, o sistema usa a segunda, e se mesmo assim ele não tiver a segunda tem a terceira fonte. Por isso elas vem em conjunto de três, pois elas são definidas de modo hieráquico para casi não tenha uma fonte no sistema do usuário a fonte seguinte na sequência fará a substituição*/
+
+/*font-weight serve para definir a espessura da fonte, a "grossura dela"
+
+/*Quando quisermos sairmos de uma pasta, voltar um nível, nós usamos ../ desse modo conseguiremos acessar no nosso caso a raíz do projeto */
+
+/* font-display: swap serve para substituir sua fonte temporariamnete caso se a fonte principal não carregar */
+
+/*padding-top: espaçamento para a parte de cima e padding-bottom: espaçamento na parte de baixo e padding-right e padding-left: espaçamento lateral, 
+porém se colocados para estilizar uma parte que está em bloco ele acaba somando os padding, no caso eu teria que tirar o width e height para seguir com os padding*/
